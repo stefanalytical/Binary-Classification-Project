@@ -17,4 +17,4 @@ This project is an end-to-end machine learning project that deals with classific
   <img src="./PNGs/Figure1.png" alt="Getting started" width="250" height="200"/>
 </p>
 
-
+- Open the diabetes.arff dataset with the Weka Explorer.

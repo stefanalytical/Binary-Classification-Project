@@ -9,4 +9,12 @@ This project is an end-to-end machine learning project that deals with classific
 4.	Evaluate algorithms.
 5.	Finalize model and present results.
 
+## Load the dataset
+
+- Open the diabetes.arff dataset with the Weka Explorer.
+
+<p float = "center">
+  <img src="./PNGs/Figure1.png" alt="Getting started" width="250" height="200"/>
+</p>
+
 

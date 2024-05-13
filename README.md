@@ -47,3 +47,8 @@ This project is an end-to-end machine learning project that deals with classific
 - In general, there is poor separation between the classes on the scatter plots.
 - It would be beneficial to transform the data and create multiple views by normalizing and standardizing.
 
+
+**Prepare Views of the Dataset
+
+
+

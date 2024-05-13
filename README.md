@@ -48,7 +48,33 @@ This project is an end-to-end machine learning project that deals with classific
 - It would be beneficial to transform the data and create multiple views by normalizing and standardizing.
 
 
-**Prepare Views of the Dataset
+## Prepare Views of the Dataset
+By creating varied views of the data, it will become clear which views are generally better at exposing the structure of the classification problem. I will create 3 additional views of the data, with each view of the dataset being created from the original.
+
+**Normalized View**
+
+This is the first view and includes all attributes and normalizes to fit in the range [0,1]. Generally, this benefits algorithms that are influenced by the scale of the attributes, such as instance-based or regression methods.
+
+<p float = "center">
+  <img src="./PNGs/Figure4.png" alt="Getting started" width="500" height="400"/>
+</p>
+
+**Standardized View**
+
+As I discussed in the Attribute Distributions section, some of the attributes have a Gaussian-like distribution. The data can be rescaled and the Gaussian-like distribution can be taken into account by using a standardized filter. The standardized view will create a copy of the original dataset named `diabetes-standardize.arff`, but each attribute will have a mean value of 0 and a standard deviation of 1. This view benefits algorithms that assume a Gaussian distribution in the input variables, such as Logistic Regression and Naive Bayes.
+
+<p float = "center">
+  <img src="./PNGs/Figure5.png" alt="Getting started" width="500" height="400"/>
+</p>
+
+**Missing Data**
+
+Although there are no missing values in the original dataset, some of the attributes had bad or missing data that was marked with 0 values. The new view of the data labeled `diabetes-missing.arff` creates a copy of the original dataset with the missing data marked and then imputed with an average value for each attribute.
+
+<p float = "center">
+  <img src="./PNGs/Figure6.png" alt="Getting started" width="500" height="400"/>
+</p>
+
 
 
 

@@ -75,6 +75,30 @@ Although there are no missing values in the original dataset, some of the attrib
   <img src="./PNGs/Figure6.png" alt="Getting started" width="500" height="400"/>
 </p>
 
+## Evaluate Algorithms
+
+Now I will design an experiment to assess the suite of standard classification algorithms across the different views of the problem using the Weka Experimenter. The following datasets were used:
+
+```bash
+- `diabetes.arff`
+- `diabetes-normalize.arff`
+- `diabetes-standardize.arff`
+- `diabetes-missing.arff`
+```
+
+The following 8 classification algorithms were used:
+
+```bash
+- rules.ZeroR
+- bayes.NaiveBayes
+- functions.Logistic
+- functions.SMO
+- lazy.IBk
+- rules.PART
+- trees.REPTree
+- trees.J48
+```
+
 
 
 

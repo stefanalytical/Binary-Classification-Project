@@ -126,6 +126,20 @@ To produce a final result that will best describe the model I opted to show stan
 
 The results show that the estimated accuracy of the model on unseen data is 77.47% with a standard deviation of 4.39%.
 
+## Finalze the Model and Present the Results
+
+Next, I will create a final version of the model trained on all of the training data and save it to a file. The steps are:
+
+1. Load `diabetes.arff`.
+2. Choose the Classify tab and select the Logistic regression algorithm.
+3. Under Test options, select "Use training set".
+4. Click start to create the finalized model.
+5. Right-click in the Result list and select Save model.
+
+This model can be loaded and used to make predictions on new data. The model should have accuracy between 68.96% and 86.25%.
+
+# Part B
+
 
 
 

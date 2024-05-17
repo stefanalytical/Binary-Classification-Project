@@ -1,6 +1,8 @@
 # Binary-Classification-Project
 This project is an end-to-end machine learning project that deals with classification algorithms utilizing [Weka 3.8.6](https://waikato.github.io/weka-site/index.html). The first portion of the project features the `diabetes.arff` dataset and the final portion features the `heart.csv` dataset. The `diabetes.arff` dataset contains Pima Indians onset of diabetes data. The `heart.csv` dataset is also a real life heart failure prediction dataset that contains attributes of patients who may or may not suffer from heart disease. All other files are different views of the original datasets.
 
+# Part A
+
 ## Project Goals
 
 1.	Load the dataset.
@@ -98,6 +100,38 @@ The following 8 classification algorithms were used:
 - trees.REPTree
 - trees.J48
 ```
+For the first experiment, I changed KNN for IBk to 3. After running the experiment and performing the test, the pairwise-test results for ZeroR are produced:
+
+<p float = "center">
+  <img src="./PNGs/Figure7.png" alt="Getting started" width="500" height="300"/>
+</p>
+
+Compared to ZeroR, all the algorithms are skillful on all of the views of the dataset. The baseline for skill is 65.11% accuracy. The view of the dataset with missing values imputed resulted in lower model accuracy in general. There is little variation between the standardized and normalized results when compared to the raw results, suggesting that the raw dataset will be sufficient. Finally, it appears that Logistic regression achieved higher accuracy results, but we can further determine if the difference is significant.
+
+To do this, I set Logistic regression as the test base and then reran the analysis:
+
+<p float = "center">
+  <img src="./PNGs/Figure8.png" alt="Getting started" width="500" height="300"/>
+</p>
+
+The base dataset and the normalized and standardized datasets are almost identical and in some instances are just a few hundredths off from each other. The dataset where missing values were replaced had the lowest overall classification accuracy rate. Since there is little difference between the base, normalized, and standardized datasets, it would be alright to use the raw dataset. The baseline for skill is 77.47% except for the dataset with missing values replaced and all algorithms were compared to Logistic and were not as effective.
+
+Compared to the logistic regression model, ZeroR, IBk, PART, and REPTree produced results that were statistically worse. NaiveBayes, SMO, and J48 produced results that were statistically the same. No model produced results that were statistically better.
+
+To produce a final result that will best describe the model I opted to show standard deviations and only the results for the logistic regression algorithm:
+
+<p float = "center">
+  <img src="./PNGs/Figure9.png" alt="Getting started" width="300" height="200"/>
+</p>
+
+The results show that the estimated accuracy of the model on unseen data is 77.47% with a standard deviation of 4.39%.
+
+
+
+
+
+
+
 
 
 
